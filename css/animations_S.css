@@ -1,0 +1,101 @@
+/* Arrow */
+.icone--seta{
+  animation-name:flutuar;
+  animation-duration:1.4s;
+  animation-iteration-count:infinite;
+
+  -webkit-animation-name:flutuar;
+  -webkit-animation-duration:1.4s;
+  -webkit-animation-iteration-count:infinite;
+
+  -moz-animation-name:flutuar;
+  -moz-animation-duration:1.4s;
+  -moz-animation-iteration-count:infinite;
+
+  -o-animation-name:flutuar;
+  -o-animation-duration:1.4s;
+  -o-animation-iteration-count:infinite;
+}
+
+@keyframes flutuar{
+  0%{
+    position:absolute;
+    bottom:4px;
+  }
+  50%{
+    position:absolute;
+    bottom:20px;
+  }
+  100%{
+    position:absolute;
+    bottom:4px;
+  }
+}
+
+@-webkit-keyframes flutuar{
+  0%{
+    position:absolute;
+    bottom:4px;
+  }
+  50%{
+    position:absolute;
+    bottom:20px;
+  }
+  100%{
+    position:absolute;
+    bottom:4px;
+  }
+}
+
+@-moz-keyframes flutuar{
+  0%{
+    position:absolute;
+    bottom:4px;
+  }
+  50%{
+    position:absolute;
+    bottom:20px;
+  }
+  100%{
+    position:absolute;
+    bottom:4px;
+  }
+}
+
+@-o-keyframes flutuar{
+  0%{
+    position:absolute;
+    bottom:4px;
+  }
+  50%{
+    position:absolute;
+    bottom:20px;
+  }
+  100%{
+    position:absolute;
+    bottom:4px;
+  }
+}
+
+/* Show text */
+.reveal{
+  position:relative;
+  transform:translateY(150px);
+  -webkit-transform:translateY(150px);
+  -moz-transform:translateY(150px);
+  -ms-transform:translateY(150px);
+  -o-transform:translateY(150px);
+  opacity:0;
+  transition:all .6s ease;
+  -webkit-transition:all .6s ease;
+  -moz-transition:all .6s ease;
+  -o-transition:all .6s ease;
+}
+.reveal.active{
+  transform:translateY(0px);
+  -webkit-transform:translateY(0px);
+  -moz-transform:translateY(0px);
+  -ms-transform:translateY(0px);
+  -o-transform:translateY(0px);
+  opacity:1;
+}
